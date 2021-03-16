@@ -1,70 +1,112 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Unsplash clone for educational purposes ONLY!
 
-## Available Scripts
+<br/>
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#demo">Demo</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-In the project directory, you can run:
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## About The Project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+This website has been built following the UI presented at www.unsplash.com, the functionality they offer and the Unsplash API that is opened to the public. 
+It is a simple photo gallery that renders random images on mount, but with the possibility to search images sorted by topics and keywords. 
+At the moment, the functionality that this project offers is as follows:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Current functionality
 
-### `yarn build`
+1) Random images on load with infinite scrolling.
+2) Modal that pops up on click to watch the image in detail with information related to the author.
+3) Posibility to swipe left and right, navigating through the array of images mounted, with corresponding data for each of them.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Future implementations
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1) Possibility to search images by topis and keywords 
+2) Possibility to download images
+3) Bonus: To create a server to be able to create an accound and uploading images
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built With
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Application was built with:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-   [React](https://reactjs.org/)
+-   [JSS](https://cssinjs.org/)
+-   [Unsplash API](https://unsplash.com/developers)
+-   [Axios](https://github.com/axios/axios)
 
-## Learn More
+### Tested with
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Cypress](https://www.cypress.io/)
+- [Jest with Enzyme](https://enzymejs.github.io/enzyme/docs/guides/jest.html)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Getting Started
 
-### Analyzing the Bundle Size
+Follow the instructions bellow to start the project on your own machine.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Installation
 
-### Advanced Configuration
+1. Get a free API Key at [https://unsplash.com/developers](https://unsplash.com/developers)
+2. Clone the repo
+    ```sh
+    git clone https://github.com/mauroavellaneda/Unsplash.git
+    ```
+3. Install NPM packages
+    ```sh
+    yarn install
+    ```
+4. Create file `.env` in you main directory
+5. Enter your API in `.env`
+    ```JS
+    const REACT_APP_API_KEY = 'ENTER YOUR ACCES KEY FROM UNSPLASH';
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Live version
 
-### `yarn build` fails to minify
+_Check the application here [Demo](https://unsplash-challenge.netlify.app)_
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Contribution
+
+The devlopement of the App is still in progress. Only some part is implemented. You can help with 
+code contribution to add more functionality in the App.
+
+
+
+## Important 
+
+[Unplash](https://unsplash.com) is a registered trademark. This project is just for learning purposes and should be treated as such.
+
+
+
+## Contact
+
+Mauro Avellaneda - [@Linkedin](https://www.linkedin.com/in/mauro-avellaneda-b9539a18a/) 
+
