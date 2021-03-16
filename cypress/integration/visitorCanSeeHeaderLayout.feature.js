@@ -1,4 +1,4 @@
-describe("Website interface", () => {
+describe("Header interface", () => {
   beforeEach(() => {
     cy.visit("/");
   });

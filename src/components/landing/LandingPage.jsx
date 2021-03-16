@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { createUseStyles } from "react-jss";
+import useStyles from "./styles";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Button from "@material-ui/core/Button";
 import { Dialog, DialogActions } from "@material-ui/core";
-import Image from "./Image";
+import Image from "../Image/Image";
 import Spinner from "react-spinkit";
-import ImageSlider from "./ImageSlider";
-import fetchData from "../modules/data";
+import ImageSlider from "../modal/ImageSlider";
+import fetchData from "../../modules/data";
 
 const LandingPage = () => {
   const classes = useStyles();
@@ -127,20 +127,4 @@ const LandingPage = () => {
     </>
   );
 };
-const useStyles = createUseStyles({
-  imageWrapper: {
-    position: "relative",
-    maxWidth: "100%",
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-    gridTemplateRows: "minmax(300px, auto)",
-    margin: "60px 40px",
-    gridAutoFlow: "dense",
-    gridGap: "10px",
-  },
-  spinner: {
-    left: "50%",
-    marginBottom: "100px",
-  },
-});
 export default LandingPage;

@@ -90,7 +90,7 @@ Follow the instructions bellow to start the project on your own machine.
 
 ## Live version
 
-_Check the application here [Demo](https://unsplash-challenge.netlify.app)_
+_Check the application here [Demo](https://unsplash-gallery-react.netlify.app)_
 
 
 ## Contribution

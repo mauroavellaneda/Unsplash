@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./components/Header";
-import LandingPage from "./components/LandingPage";
-import { createUseStyles } from "react-jss";
+import Header from "./components/header/Header";
+import LandingPage from "./components/landing/LandingPage";
+import useStyles from "./styles";
 
 const App = () => {
   const classes = useStyles();
@@ -12,12 +12,4 @@ const App = () => {
     </div>
   );
 };
-const useStyles = createUseStyles({
-  global: {
-    margin: 0,
-    padding: 0,
-    boxSizing: "border-box",
-  },
-});
-
 export default App;
