@@ -105,7 +105,7 @@ const useStyles = createUseStyles({
     alignItems: "center",
     justifyContent: "center",
     "@media (max-width: 650px)": {
-      width: "100",
+      width: "100%",
     },
   },
   image: {
