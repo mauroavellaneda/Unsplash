@@ -4,6 +4,7 @@ import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import useStyles from "./styles";
 
 const ImageSlider = (props) => {
+  const [isImageLoaded, setImageLoaded] = useState(false);
   const classes = useStyles();
 
   const {
@@ -13,8 +14,6 @@ const ImageSlider = (props) => {
     onClickPrev,
     onClickNext,
   } = props;
-
-  const [isImageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     const handleKeyPress = (e) => {
@@ -63,12 +62,6 @@ const ImageSlider = (props) => {
             src={selectedImage?.urls.small}
             onLoad={() => setImageLoaded(true)}
           />
-          {/* {!isImageLoaded ? (
-            <div>
-              <Spinner />
-            </div>
-          ) : ( */}
-          {/* )} */}
         </div>
         <div class={classes.location}>
           {selectedImage?.user.location && (

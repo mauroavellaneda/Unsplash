@@ -20,11 +20,13 @@ const useStyles = createUseStyles({
   image: {
     height: "70%",
     width: "100",
+
     "@media (max-width: 650px)": {
       position: "absolute",
       width: "90%",
       height: "85%",
       bottom: "0px",
+      objectFit: "cover",
     },
   },
   header: {

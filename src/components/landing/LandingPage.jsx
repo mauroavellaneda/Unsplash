@@ -88,6 +88,7 @@ const LandingPage = () => {
               url={image.urls.small}
               key={idx}
               id={image.id}
+              alt={image.alt_description}
               onClickImage={onSelectImage}
             />
           ))}
