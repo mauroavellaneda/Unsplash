@@ -37,7 +37,6 @@ const LandingPage = () => {
   };
 
   useEffect(() => {
-    let totalImages = images.length - 1;
     if (selectedImage) {
       const selectedImageIndex = images?.findIndex(
         (image) => image.id === selectedImage.id
@@ -46,9 +45,6 @@ const LandingPage = () => {
         setprevDisabled(true);
       } else {
         setprevDisabled(false);
-      }
-      if (totalImages - selectedImageIndex <= 3) {
-        fetchRandomImages();
       }
     }
   }, [selectedImage]);
@@ -94,6 +90,7 @@ const LandingPage = () => {
           ))}
         </div>
       </InfiniteScroll>
+
       <Dialog
         data-cy="modal"
         open={showPreview}

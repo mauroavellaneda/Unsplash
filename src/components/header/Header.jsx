@@ -19,7 +19,7 @@ const Header = () => {
           <input
             data-cy="search-bar"
             className={classes.searchInput}
-            placeholder="Search photos"
+            placeholder="Search photos(comming soon...)"
             autoComplete="off"
           ></input>
         </div>

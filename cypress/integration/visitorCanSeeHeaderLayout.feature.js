@@ -35,7 +35,7 @@ describe("Header interface", () => {
       cy.get('[data-cy="search-bar"]').should(
         "have.attr",
         "placeholder",
-        "Search photos"
+        "Search photos(comming soon...)"
       );
     });
   });

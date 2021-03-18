@@ -40,7 +40,7 @@ At the moment, the functionality that this project offers is as follows:
 
 ### Future implementations
 
-1) Possibility to search images by topis and keywords 
+1) Possibility to search images by topics and keywords 
 2) Possibility to download images
 3) Bonus: To create a server to be able to create an accound and uploading images
 
